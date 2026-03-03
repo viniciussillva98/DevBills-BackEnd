@@ -6,7 +6,7 @@
     "lib": [
       "ES2020"
     ], // Permite usar funcionalidades da linguagem baseadas no ES2021
-    "rootDir": "src", // Diretório onde está o código-fonte (entrada)
+    "rootDir": ".", // Diretório onde está o código-fonte (entrada)
     "outDir": "dist", // Diretório onde os arquivos compilados serão salvos (saída)
     "resolveJsonModule": true, // Permite importar arquivos .json como módulos (útil para config, Firebase etc)
     "esModuleInterop": true, // Permite usar `import express from 'express'` com libs que usam exportação CommonJS
@@ -18,7 +18,8 @@
     "noImplicitOverride": true // Garante que ao sobrescrever métodos, você use a palavra-chave `override` (mais seguro)
   },
   "include": [
-    "src"
+    "src",
+    "api"
   ], // Apenas os arquivos dentro da pasta `src` serão analisados
   "exclude": [
     "node_modules",
