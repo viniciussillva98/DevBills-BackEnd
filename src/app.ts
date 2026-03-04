@@ -15,6 +15,6 @@ app.register(cors, {
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
 });
 
-app.register(routes, { prefix: "/api" });
+app.register(routes);
 
 export default app;
